@@ -52,7 +52,16 @@
             background-color:brown;
             color:white;
         }
+
+        .jo{
+            background-color:green;
+        }
+
+        .rossz{
+            background-color:red;
+        }
     </style>
+    <script src="/hetedik.js"></script>
 </head>
 <body>
     <div id="külső">
@@ -62,17 +71,17 @@
 
         <div id="középső">
             <div id="válaszok">
-                <div id="válasz1" class="kerdes kattintható">Válasz1</div>
-                <div id="válasz2" class="kerdes kattintható jó">Válasz2</div>
-                <div id="válasz3" class="kerdes kattintható rossz">Válasz3</div>
+                <div id="válasz1" onclick="válaszok(1)" class="kerdes kattintható">Válasz1</div>
+                <div id="válasz2" onclick="válaszok(2)" class="kerdes kattintható">Válasz2</div>
+                <div id="válasz3" onclick="válaszok(3)" class="kerdes kattintható">Válasz3</div>
             </div>
             <div id="kép">
                 <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
             </div>
         </div>
         <div id="vezérlő">
-            <div class="gomb kattintható">Vissza</div>
-            <div class="gomb kattintható">Előre</div>
+            <div onclick="visszakattintás()" class="gomb kattintható">Vissza</div>
+            <div onclick="előrekattintás()" class="gomb kattintható">Előre</div>
         </div>
     </div>
 </body>
